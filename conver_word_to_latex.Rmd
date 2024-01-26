@@ -1,0 +1,17 @@
+--
+title: "Convert word document to latex"
+author: "Kiplagat John Noel"
+output:
+  html_document: default
+word_document: default
+date: "`r Sys.Date()`"
+---
+
+
+
+```{r}
+library(pandoc)
+#word2tex <- pandoc::pandoc_convert("https://github.com/Kiplagatnoel/Pandoc_conversion/blob/main/simplifiedReport.docx", from="docx" ,to = "latex")
+word2tex <- pandoc::pandoc_convert("C:/Users/USER/Downloads/simplifiedReport.docx", from="docx" ,to = "latex")
+
+```
